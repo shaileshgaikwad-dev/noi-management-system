@@ -19,10 +19,8 @@ import { UpdateEnquiry } from "./pages/admin/Enquiries/UpdateEnquiry";
 import { PublicLayout } from "./layouts/PublicLayout";
 import { AboutSection } from "./components/home/AboutSection";
 import { ServicesSection } from "./components/home/ServicesSection";
-import { Contact } from "./components/home/Contact";
 import { ScrollToTop } from "./components/common/ScrollToTop";
 import { NotFound } from "./components/common/NotFound";
-import { PersonalContact } from "./components/home/PersonalContact";
 import { ContactNew } from "./components/home/ContactNew";
 import { MonthlyIncomeChart } from "./pages/admin/Charts/MonthlyIncomeChart";
 

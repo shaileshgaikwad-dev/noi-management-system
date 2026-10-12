@@ -10,7 +10,7 @@ export function CreatePropertyInformation({
   register,
   errors,
 }: IPropertyInformation) {
-  const hasError = !!errors.propertyAddress;
+  // const hasError = !!errors.propertyAddress;
 
   return (
     <div className="p-4 sm:p-6 md:p-8">

@@ -63,7 +63,7 @@ export function HowItWorks() {
           </div>
 
           <div className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
-            {steps.map((step, index) => (
+            {steps.map((step) => (
               <div
                 key={step.number}
                 className="group relative"

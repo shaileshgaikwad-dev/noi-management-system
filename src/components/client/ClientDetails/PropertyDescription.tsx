@@ -14,7 +14,6 @@ export function PropertyDescription({
   editMode,
   client,
   registerClient,
-  clientError,
 }: IPropertyProps) {
   return (
     <section className="mb-6 rounded-2xl bg-white p-6 shadow-sm transition hover:shadow-md border-2 border-purple-600">

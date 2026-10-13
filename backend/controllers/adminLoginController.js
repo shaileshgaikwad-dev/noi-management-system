@@ -1,7 +1,7 @@
 import Admin from "../models/Admin.js";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
-import { LoginEmail } from "../utils/emailservice.js";
+import { LoginEmail } from "../utils/emailService.js";
 
 export async function loginAdmin(req, res) {
   try {

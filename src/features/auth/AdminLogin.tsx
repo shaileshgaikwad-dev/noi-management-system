@@ -150,7 +150,7 @@ export function AdminLogin() {
 
         {/* Footer */}
         <p className="mt-6 text-center text-xs text-gray-500">
-          &copy; ${new Date().getFullYear()} NOTICE OF INTIMATION PROJECT. All
+          &copy; {new Date().getFullYear()} Notice of Intimation Management. All
           rights reserved.
         </p>
       </div>

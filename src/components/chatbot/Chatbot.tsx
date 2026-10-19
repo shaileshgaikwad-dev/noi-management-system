@@ -8,6 +8,7 @@ export function Chatbot() {
   const { messages, loading, sendMessage } = useChatbot();
 
   const messageEndRef = useRef<HTMLDivElement>(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     messageEndRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -17,6 +18,7 @@ export function Chatbot() {
     if (!input.trim() || loading) return;
     sendMessage(input);
     setInput("");
+    inputRef.current?.focus;
   };
 
   return (
@@ -125,6 +127,7 @@ export function Chatbot() {
           <div className="border-t border-slate-200 bg-white p-3">
             <div className="flex items-center gap-2">
               <input
+                ref={inputRef}
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}

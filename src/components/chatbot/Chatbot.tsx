@@ -128,8 +128,13 @@ export function Chatbot() {
                 type="text"
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleSend();
+                  }
+                }}
                 placeholder="Ask anything..."
-                className="w-full px-3 py-2.5 rounded-lg border-2 border-black"
+                className="w-full px-3 py-2.5 rounded-lg border-2 border-slate-300 bg-white text-slate-900 caret-purple-600 focus:border-purple-500 focus:outline-none"
                 disabled={loading}
               />
               <button

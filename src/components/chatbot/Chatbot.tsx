@@ -18,7 +18,7 @@ export function Chatbot() {
     if (!input.trim() || loading) return;
     sendMessage(input);
     setInput("");
-    inputRef.current?.focus;
+    inputRef.current?.focus();
   };
 
   return (

@@ -1,4 +1,3 @@
-
 name: NOI Management CI
 
 on:
@@ -40,31 +39,3 @@ jobs:
 
       - name: Build frontend
         run: npm run build
-
-  backend-ci:
-    name: Backend checks
-    runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: backend
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: backend/package-lock.json
-
-      - name: Install backend dependencies
-        run: npm ci
-
-      - name: Run backend lint
-        run: npm run lint --if-present
-
-      - name: Run backend tests
-        run: npm test

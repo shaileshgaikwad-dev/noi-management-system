@@ -1,6 +1,6 @@
 export function AboutSection() {
   return (
-    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-b from-white to-slate-50 py-20 sm:py-24">
+    <section data-aos="zoom-in" className="relative overflow-hidden bg-gradient-to-b from-white to-slate-50 py-20 sm:py-24">
       {/* Decorative background */}
 
       <div className="pointer-events-none absolute -left-40 top-0 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>

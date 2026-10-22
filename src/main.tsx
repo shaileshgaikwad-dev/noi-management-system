@@ -7,6 +7,8 @@ import "@fontsource/inter/500.css";
 import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import AOS from "aos";
+import "aos/dist/aos.css";
+
 
 AOS.init({
   duration: 700,

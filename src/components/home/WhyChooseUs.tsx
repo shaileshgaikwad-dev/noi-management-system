@@ -90,7 +90,7 @@ export function WhyChooseUs() {
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
 
           {/* Header — Left column */}
-          <div className="lg:col-span-5 lg:sticky lg:top-24">
+          <div data-aos="flip-left" className="lg:col-span-5 lg:sticky lg:top-24">
             {/* Badge */}
             <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
@@ -115,7 +115,7 @@ export function WhyChooseUs() {
           </div>
 
           {/* Reasons — Right column */}
-          <div className="lg:col-span-7">
+          <div data-aos="flip-right" className="lg:col-span-7">
             <div className="grid gap-5 sm:grid-cols-2">
               {reasons.map((reason) => {
                 const colors = colorMap[reason.color];

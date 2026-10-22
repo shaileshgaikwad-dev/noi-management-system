@@ -9,7 +9,7 @@ export function AboutSection() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
           {/* Content */}
-          <div data-aos="zoom-in">
+          <div data-aos="fade-right">
             {/* Badge */}
             <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
@@ -44,7 +44,7 @@ export function AboutSection() {
           </div>
 
           {/* Information Card */}
-          <div data-aos="fade-up" className="group relative">
+          <div data-aos="fade-left" className="group relative">
             {/* Glow effect */}
             <div className="absolute -inset-1 rounded-3xl bg-gradient-to-r from-indigo-500 to-purple-500 opacity-0 blur-lg transition-all duration-500 group-hover:opacity-20"></div>
 

@@ -34,8 +34,10 @@ export function Home() {
                 </span>
               </div>
 
+              
+
               {/* Heading */}
-              <h1 className="text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              <h1 data-aos="fade-up" className="text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
                 Simple and organized{" "}
                 <span className="relative inline-block">
                   <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">

@@ -12,8 +12,11 @@ import "aos/dist/aos.css";
 
 AOS.init({
   duration: 700,
-  once: true,
+  once: false,
   offset: 80,
+  mirror:true,
+  disable:false,
+
 });
 
 createRoot(document.getElementById("root")!).render(

@@ -34,10 +34,11 @@ export function Home() {
                 </span>
               </div>
 
-              
-
               {/* Heading */}
-              <h1 data-aos="fade-up" className="text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
+              <h1
+                data-aos="fade-up"
+                className="text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl lg:text-6xl"
+              >
                 Simple and organized{" "}
                 <span className="relative inline-block">
                   <span className="bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent">
@@ -48,14 +49,22 @@ export function Home() {
               </h1>
 
               {/* Description */}
-              <p className="mt-8 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+              <p
+                data-aos="fade-up"
+                data-aos-delay="100"
+                className="mt-8 text-base leading-7 text-slate-600 sm:text-lg sm:leading-8"
+              >
                 Manage Notice of Intimation work, clients, agents, loan
                 information and processing details from one centralized
                 management system.
               </p>
 
               {/* CTA Buttons */}
-              <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+              <div
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="mt-10 flex flex-col gap-3 sm:flex-row"
+              >
                 <Link
                   to="/contact-new"
                   className="group relative inline-flex items-center justify-center gap-2 overflow-hidden rounded-lg bg-indigo-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-indigo-500/30 transition-all duration-300 hover:bg-indigo-700 hover:shadow-xl hover:shadow-indigo-500/40 hover:-translate-y-0.5 active:translate-y-0"
@@ -135,7 +144,11 @@ export function Home() {
             </div>
 
             {/* Hero Information Card — now visible on all screens */}
-            <div className="group relative">
+            <div
+              data-aos="fade-left"
+              data-aos-delay="200"
+              className="group relative"
+            >
               {/* Glow behind card */}
               <div className="absolute -inset-2 rounded-3xl bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 opacity-0 blur-2xl transition-opacity duration-500 group-hover:opacity-20"></div>
 

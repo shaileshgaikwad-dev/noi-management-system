@@ -133,7 +133,7 @@ export function BusinessStats() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-20 sm:py-24">
+    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-20 sm:py-24">
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>

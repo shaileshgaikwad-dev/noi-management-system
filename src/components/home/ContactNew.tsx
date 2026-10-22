@@ -3,7 +3,7 @@ import { ContactInfoCards } from "./ContactInfoCards";
 
 export function ContactNew() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
+    <div data-aos="fade-up" className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
       <main className="relative overflow-hidden">
         {/* Decorative blobs */}
         <div className="pointer-events-none absolute -left-40 top-40 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export function ContactCTA() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 py-20 sm:py-28">
+    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 py-20 sm:py-28">
       {/* Decorative patterns */}
       <div className="pointer-events-none absolute inset-0">
         {/* Radial glow */}

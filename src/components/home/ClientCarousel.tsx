@@ -9,7 +9,7 @@ export function ClientsCarousel() {
   const duplicatedClients = [...clients, ...clients];
 
   return (
-    <section className="overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white py-16 sm:py-20">
+    <section data-aos="fade-up" className="overflow-hidden bg-gradient-to-b from-slate-50 via-white to-white py-16 sm:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
         <div className="mx-auto mb-12 max-w-2xl text-center">

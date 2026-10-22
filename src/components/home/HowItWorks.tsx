@@ -27,7 +27,7 @@ export function HowItWorks() {
   ];
 
   return (
-    <section data-aos="flip-left" className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-20 sm:py-24">
+    <section  className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-20 sm:py-24">
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>
@@ -62,7 +62,7 @@ export function HowItWorks() {
             <div className="mx-auto h-px w-[85%] bg-gradient-to-r from-transparent via-indigo-200 to-transparent"></div>
           </div>
 
-          <div className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
+          <div data-aos="flip-up" className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5">
             {steps.map((step) => (
               <div
                 key={step.number}

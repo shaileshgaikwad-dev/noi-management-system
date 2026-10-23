@@ -14,7 +14,7 @@ import { getYears } from "../../utils/year";
 
 export function MonthlyIncomeTrendChart() {
   const current_year = new Date().getFullYear();
-  const [selectedYear , setSelectedYear] = useState(current_year);
+  const [selectedYear, setSelectedYear] = useState(current_year);
   const years = getYears();
   const { chartData, loading } = useIncomeTrend(selectedYear);
 
@@ -23,47 +23,47 @@ export function MonthlyIncomeTrendChart() {
   return (
     <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm sm:p-5 md:p-6">
       <div className="mb-5 flex items-start justify-between gap-4">
-  <div className="flex items-center gap-3">
-    <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-indigo-50 ring-1 ring-indigo-100">
-      <svg
-        className="h-5 w-5 text-indigo-600"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={1.8}
-          d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
-        />
-      </svg>
-    </div>
+        <div className="flex items-center gap-3">
+          <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-indigo-50 ring-1 ring-indigo-100">
+            <svg
+              className="h-5 w-5 text-indigo-600"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={1.8}
+                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+              />
+            </svg>
+          </div>
 
-    <div className="min-w-0">
-      <h3 className="text-sm font-semibold text-slate-900 sm:text-base">
-        Monthly Income
-      </h3>
-      <p className="mt-0.5 text-xs text-slate-500 sm:text-sm">
-        Income trend for {selectedYear}
-      </p>
-    </div>
-  </div>
+          <div className="min-w-0">
+            <h3 className="text-sm font-semibold text-slate-900 sm:text-base">
+              Monthly Income
+            </h3>
+            <p className="mt-0.5 text-xs text-slate-500 sm:text-sm">
+              Income trend for {selectedYear}
+            </p>
+          </div>
+        </div>
 
-  <span className="inline-flex flex-shrink-0 items-center gap-1.5 rounded-full bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-100">
-    <select 
-    value={selectedYear}
-    onChange={(e)=>setSelectedYear(Number(e.target.value))}
-    className="rounded-lg border border-slate-200 bg-white px-3 py-2
+        <select
+          value={selectedYear}
+          onChange={(e) => setSelectedYear(Number(e.target.value))}
+          className="rounded-lg border border-slate-200 bg-white px-3 py-2
     text-sm font-medium text-slate-700 outline-none transition
     focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
-    >
-      {
-        years.map((year)=>(<option key={year} value={year}>{year}</option>))
-      }
-    </select>
-  </span>
-</div>
+        >
+          {years.map((year) => (
+            <option key={year} value={year}>
+              {year}
+            </option>
+          ))}
+        </select>
+      </div>
 
       {loading ? (
         <div className="flex justify-center py-10">

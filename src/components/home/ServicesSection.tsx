@@ -143,7 +143,7 @@ export function ServicesSection() {
         </div>
 
         {/* Services Grid */}
-        <div data-aos="fade-up" data-aos-duration="3000" className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-aos="fade-up" data-aos-duration="2000" className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
             const colors = colorMap[service.color];
 

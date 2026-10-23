@@ -6,7 +6,13 @@ export function BusinessStats() {
 
   const stats = [
     {
-      value : loading ? (<LoadingSpinner/>) : (statusDashboard?.totalClients ?? 0 ) > 0 ? (`${statusDashboard.totalClients}+`) : ("400+")  ,
+      value: loading ? (
+        <LoadingSpinner />
+      ) : (statusDashboard?.totalClients ?? 0) > 0 ? (
+        `${statusDashboard.totalClients}+`
+      ) : (
+        "400+"
+      ),
       label: "Notice of Intimation Cases Completed",
       icon: (
         <svg
@@ -133,14 +139,14 @@ export function BusinessStats() {
   };
 
   return (
-    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-20 sm:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-white via-slate-50 to-white py-20 sm:py-24">
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="mx-auto max-w-2xl text-center">
+        <div data-aos="fade-up" className="mx-auto max-w-2xl text-center">
           {/* Badge */}
           <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
             <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
@@ -167,7 +173,7 @@ export function BusinessStats() {
             const colors = colorMap[stat.color];
 
             return (
-              <div
+              <div data-aos="zoom-in"
                 key={stat.label}
                 className={`group relative rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 ${colors.hoverBorder} ${colors.glow}`}
               >

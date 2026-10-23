@@ -114,7 +114,7 @@ export function ServicesSection() {
   };
 
   return (
-    <section data-aos="zoom-in-up" className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-20 sm:py-24">
+    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-20 sm:py-24">
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>
@@ -128,7 +128,7 @@ export function ServicesSection() {
             Our Services
           </span>
 
-          <h2 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
+          <h2 data-aos="zoom-in" className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.5rem] lg:leading-tight">
             Everything you need to manage{" "}
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
               Notice of Intimation
@@ -136,14 +136,14 @@ export function ServicesSection() {
             work
           </h2>
 
-          <p className="mt-5 text-base leading-7 text-slate-600">
+          <p data-aos="fade-right" className="mt-5 text-base leading-7 text-slate-600">
             A centralized system designed to organize clients, agents, Notice of Intimation
             processing, status tracking, and business reporting.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div data-aos="fade-up" data-aos-duration="3000" className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => {
             const colors = colorMap[service.color];
 

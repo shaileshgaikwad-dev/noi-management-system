@@ -54,7 +54,9 @@ export function MonthlyIncomeTrendChart() {
     <select 
     value={selectedYear}
     onChange={(e)=>setSelectedYear(Number(e.target.value))}
-    
+    className="rounded-lg border border-slate-200 bg-white px-3 py-2
+    text-sm font-medium text-slate-700 outline-none transition
+    focus:border-indigo-500 focus:ring-2 focus:ring-indigo-100"
     >
       {
         years.map((year)=>(<option key={year} value={year}>{year}</option>))

@@ -81,7 +81,7 @@ export function WhyChooseUs() {
   };
 
   return (
-    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-20 sm:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-20 sm:py-24">
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>
@@ -90,7 +90,7 @@ export function WhyChooseUs() {
         <div className="grid items-start gap-12 lg:grid-cols-12 lg:gap-16">
 
           {/* Header — Left column */}
-          <div data-aos="flip-left" className="lg:col-span-5 lg:sticky lg:top-24">
+          <div data-aos="fade-left" className="lg:col-span-5 lg:sticky lg:top-24">
             {/* Badge */}
             <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
               <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
@@ -115,7 +115,7 @@ export function WhyChooseUs() {
           </div>
 
           {/* Reasons — Right column */}
-          <div data-aos="flip-right" className="lg:col-span-7">
+          <div data-aos="zoom-in-up" className="lg:col-span-7">
             <div className="grid gap-5 sm:grid-cols-2">
               {reasons.map((reason) => {
                 const colors = colorMap[reason.color];

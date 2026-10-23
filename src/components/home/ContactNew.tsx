@@ -3,7 +3,10 @@ import { ContactInfoCards } from "./ContactInfoCards";
 
 export function ContactNew() {
   return (
-    <div data-aos="fade-up" className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white">
+    <div
+      data-aos="fade-up"
+      className="min-h-screen bg-gradient-to-b from-white via-slate-50 to-white"
+    >
       <main className="relative overflow-hidden">
         {/* Decorative blobs */}
         <div className="pointer-events-none absolute -left-40 top-40 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
@@ -13,20 +16,32 @@ export function ContactNew() {
         <section className="relative bg-white py-16 sm:py-20">
           <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
             <div className="flex justify-center">
-              <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
+              <span
+                data-aos="fade-up"
+                data-aos-delay="200"
+                className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700"
+              >
                 <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
                 Contact Us
               </span>
             </div>
 
-            <h1 className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl lg:leading-tight">
+            <h1
+              data-aos="fade-right"
+              data-aos-delay="100"
+              className="mt-6 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl lg:leading-tight"
+            >
               Let&apos;s discuss your{" "}
               <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                 requirements
               </span>
             </h1>
 
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
+            <p
+              data-aos="fade-left"
+              data-aos-delay="200"
+              className="mx-auto mt-6 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8"
+            >
               Have a question about our Notice of Intimation services? Reach us
               by phone, email, or send us a message below.
             </p>
@@ -38,7 +53,11 @@ export function ContactNew() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
               {/* LEFT — Info cards + trust line */}
-              <div className="lg:col-span-5">
+              <div
+                data-aos="zoom-in-left"
+                data-aos-delay="300"
+                className="lg:col-span-5"
+              >
                 <ContactInfoCards />
 
                 {/* Trust line — under the cards */}
@@ -84,7 +103,11 @@ export function ContactNew() {
               </div>
 
               {/* RIGHT — Form */}
-              <div className="lg:col-span-7">
+              <div
+                data-aos="zoom-in-right"
+                data-aos-delay="400"
+                className="lg:col-span-7"
+              >
                 <Contact />
               </div>
             </div>

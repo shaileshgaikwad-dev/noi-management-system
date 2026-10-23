@@ -1,8 +1,11 @@
 const clients = [
+  { name: "SBI", shortName: "SBI" },
   { name: "LIC Housing Finance", shortName: "LIC HFL" },
-  { name: "Central Bank of India", shortName: "Central Bank" },
-  { name: "NBFC", shortName: "NBFC" },
-  { name: "Bandhan Bank", shortName: "Bandhan Bank" },
+  { name: "Bandhan Bank", shortName: "BANDHAN BANK" },
+  { name: "Central Bank of India", shortName: "CENTRAL BANK" },
+  { name: "Aadhar Housing Finance Ltd", shortName: "AADHAR HOUSING FINANCE" },
+  { name: "Mannapuram Home Finance Ltd", shortName: "MANNAPURAM HOME FINANCE" },
+  { name: "Bank of India", shortName: "BANK OF INDIA" },
 ];
 
 export function ClientsCarousel() {

@@ -64,7 +64,7 @@ export function AdminLogin() {
 
           <div>
             <p className="text-2xl font-extrabold tracking-tight text-slate-900">
-              NOI
+              Notice of Intimation
             </p>
             <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-blue-700">
               Management
@@ -81,9 +81,7 @@ export function AdminLogin() {
 
           <h1 className="mt-7 text-4xl font-bold leading-tight tracking-tight text-slate-900 xl:text-5xl">
             Streamline Your{" "}
-            <span className="text-blue-700">
-              Notice of Intimation
-            </span>{" "}
+            <span className="text-blue-700">Notice of Intimation</span>{" "}
             Operations
           </h1>
 
@@ -216,10 +214,7 @@ export function AdminLogin() {
       {/* RIGHT PANEL — LOGIN FORM */}
       <section className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-white via-slate-50 to-blue-50 px-4 py-8 sm:px-8 lg:px-12 xl:px-20">
         {/* Compact branding for mobile */}
-        <Link
-          to="/"
-          className="mb-8 flex items-center gap-2 lg:hidden"
-        >
+        <Link to="/" className="mb-8 flex items-center gap-2 lg:hidden">
           <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-700 text-lg font-bold text-white">
             N
           </span>
@@ -285,13 +280,9 @@ export function AdminLogin() {
                     placeholder="Enter your email"
                     autoComplete="username"
                     aria-invalid={Boolean(errors.email)}
-                    aria-describedby={
-                      errors.email ? "email-error" : undefined
-                    }
+                    aria-describedby={errors.email ? "email-error" : undefined}
                     className={`w-full rounded-xl border bg-white py-3.5 pl-12 pr-4 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 ${
-                      errors.email
-                        ? "border-rose-400"
-                        : "border-slate-200"
+                      errors.email ? "border-rose-400" : "border-slate-200"
                     }`}
                   />
                 </div>
@@ -333,6 +324,7 @@ export function AdminLogin() {
 
                   <input
                     id="password"
+                    type="password"
                     {...register("hashPassword")}
                     placeholder="Enter your password"
                     className={`w-full rounded-xl border bg-white py-3.5 pl-12 pr-12 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-blue-600 focus:ring-4 focus:ring-blue-600/10 ${
@@ -341,13 +333,11 @@ export function AdminLogin() {
                         : "border-slate-200"
                     }`}
                   />
-
-                 
                 </div>
 
                 {errors.hashPassword && (
                   <p
-                    id="password-error"
+                    id="password"
                     role="alert"
                     className="mt-2 text-sm text-rose-600"
                   >
@@ -444,8 +434,8 @@ export function AdminLogin() {
 
           {/* Copyright */}
           <p className="mt-7 px-2 text-center text-xs leading-5 text-slate-400">
-            &copy; {new Date().getFullYear()} Notice of Intimation
-            Management. All rights reserved.
+            &copy; {new Date().getFullYear()} Notice of Intimation Management.
+            All rights reserved.
           </p>
         </div>
       </section>

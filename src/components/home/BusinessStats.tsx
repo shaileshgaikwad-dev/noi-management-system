@@ -173,7 +173,8 @@ export function BusinessStats() {
             const colors = colorMap[stat.color];
 
             return (
-              <div data-aos="zoom-in"
+              <div
+                data-aos="zoom-in"
                 key={stat.label}
                 className={`group relative rounded-2xl border border-slate-200 bg-white p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-xl sm:p-8 ${colors.hoverBorder} ${colors.glow}`}
               >

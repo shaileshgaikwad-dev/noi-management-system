@@ -18,7 +18,7 @@ export function ClientsCarousel() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Heading */}
-        <div className="mx-auto mb-12 max-w-2xl text-center">
+        <div data-aos="fade-up" className="mx-auto mb-12 max-w-2xl text-center">
           <span className="inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50/60 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-blue-700">
             <span className="h-1.5 w-1.5 rounded-full bg-blue-500" />
             Our Network
@@ -38,7 +38,7 @@ export function ClientsCarousel() {
         </div>
 
         {/* Carousel */}
-        <div className="relative">
+        <div data-aos="fade-up" data-aos-delay="200" className="relative">
           {/* Left fade */}
           <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-16 bg-gradient-to-r from-slate-50 to-transparent sm:w-24" />
 

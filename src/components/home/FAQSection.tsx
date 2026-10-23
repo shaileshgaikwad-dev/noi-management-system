@@ -15,7 +15,8 @@ export function FAQSection() {
         "Notice of Intimation-related work may be required for borrowers and parties involved in property mortgage transactions with banks or financial institutions.",
     },
     {
-      question: "What information is required for Notice of Intimation processing?",
+      question:
+        "What information is required for Notice of Intimation processing?",
       answer:
         "The required information can include client details, property information, loan details, and other information needed for the Notice of Intimation process.",
     },
@@ -36,14 +37,14 @@ export function FAQSection() {
   };
 
   return (
-    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-20 sm:py-24">
+    <section className="relative overflow-hidden bg-gradient-to-b from-slate-50 via-white to-slate-50 py-20 sm:py-24">
       {/* Decorative blobs */}
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>
 
       <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center">
+        <div data-aos="zoom-out" className="text-center">
           {/* Badge */}
           <span className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-indigo-700">
             <span className="h-1.5 w-1.5 rounded-full bg-indigo-500"></span>
@@ -58,8 +59,8 @@ export function FAQSection() {
           </h2>
 
           <p className="mt-5 text-base leading-7 text-slate-600">
-            Find answers to some common questions about Notice of Intimation
-            and our services.
+            Find answers to some common questions about Notice of Intimation and
+            our services.
           </p>
         </div>
 
@@ -70,6 +71,7 @@ export function FAQSection() {
 
             return (
               <div
+                data-aos="zoom-in-down"
                 key={faq.question}
                 className={`group overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ${
                   isOpen

@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 export function ContactCTA() {
   return (
-    <section data-aos="fade-up" className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 py-20 sm:py-28">
+    <section
+      data-aos="zoom-in"
+      className="relative overflow-hidden bg-gradient-to-br from-indigo-600 via-indigo-700 to-purple-700 py-20 sm:py-28"
+    >
       {/* Decorative patterns */}
       <div className="pointer-events-none absolute inset-0">
         {/* Radial glow */}
@@ -29,7 +32,10 @@ export function ContactCTA() {
 
       <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         {/* Badge */}
-        <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm">
+        <div
+          data-aos="fade-up"
+          className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-2 backdrop-blur-sm"
+        >
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75"></span>
             <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400"></span>
@@ -40,7 +46,11 @@ export function ContactCTA() {
         </div>
 
         {/* Heading */}
-        <h2 className="mt-8 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-[1.15]">
+        <h2
+          data-aos="fade-up"
+          data-aos-delay="100"
+          className="mt-8 text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl lg:leading-[1.15]"
+        >
           Need help with your{" "}
           <span className="relative inline-block">
             <span className="bg-gradient-to-r from-white via-indigo-100 to-white bg-clip-text text-transparent">
@@ -53,13 +63,21 @@ export function ContactCTA() {
         </h2>
 
         {/* Description */}
-        <p className="mx-auto mt-8 max-w-2xl text-base leading-7 text-indigo-100 sm:text-lg sm:leading-8">
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          className="mx-auto mt-8 max-w-2xl text-base leading-7 text-indigo-100 sm:text-lg sm:leading-8"
+        >
           Have a question about Notice of Intimation services or want to discuss
           your requirements? Get in touch with us.
         </p>
 
         {/* CTA Button */}
-        <div className="mt-10 flex justify-center">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="250"
+          className="mt-10 flex justify-center"
+        >
           <Link
             to="/contact-new"
             className="group relative inline-flex items-center gap-3 overflow-hidden rounded-full bg-white px-8 py-4 text-sm font-semibold text-indigo-700 shadow-2xl shadow-indigo-900/40 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-indigo-900/60 sm:px-10 sm:text-base"

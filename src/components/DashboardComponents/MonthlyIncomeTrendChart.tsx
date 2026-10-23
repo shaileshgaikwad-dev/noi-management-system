@@ -9,10 +9,14 @@ import {
 } from "recharts";
 import { useIncomeTrend } from "../../hooks/Dashboard/useIncomeTrend";
 import { LoadingSpinner } from "../common/LoadingSpinner";
+import { useState } from "react";
+import { getYears } from "../../utils/year";
 
 export function MonthlyIncomeTrendChart() {
   const current_year = new Date().getFullYear();
-  const { chartData, loading } = useIncomeTrend(current_year);
+  const [selectedYear , setSelectedYear] = useState(current_year);
+  const years = getYears();
+  const { chartData, loading } = useIncomeTrend(selectedYear);
 
   const hasData = chartData.some((item) => item.Income > 0);
 
@@ -41,13 +45,21 @@ export function MonthlyIncomeTrendChart() {
         Monthly Income
       </h3>
       <p className="mt-0.5 text-xs text-slate-500 sm:text-sm">
-        Income trend for {current_year}
+        Income trend for {selectedYear}
       </p>
     </div>
   </div>
 
   <span className="inline-flex flex-shrink-0 items-center gap-1.5 rounded-full bg-indigo-50 px-2.5 py-1 text-xs font-medium text-indigo-700 ring-1 ring-inset ring-indigo-100">
-    {current_year}
+    <select 
+    value={selectedYear}
+    onChange={(e)=>setSelectedYear(Number(e.target.value))}
+    
+    >
+      {
+        years.map((year)=>(<option key={year} value={year}>{year}</option>))
+      }
+    </select>
   </span>
 </div>
 

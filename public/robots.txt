@@ -3,6 +3,8 @@ Allow: /
 
 Disallow: /admin
 Disallow: /dashboard
+Disallow: /login
+Disallow: /register
 Disallow: /api
 
-Sitemap: https://noi-management-system-729e.vercel.app/sitemap.xml
+Sitemap: https://noi-management-system-729e.vercel.app/sitemap.xmls

@@ -42,7 +42,7 @@ export function FAQSection() {
       <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-indigo-100/40 blur-3xl"></div>
       <div className="pointer-events-none absolute -right-40 bottom-20 h-96 w-96 rounded-full bg-purple-100/40 blur-3xl"></div>
 
-      <div className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-up" className="relative mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div data-aos="zoom-out" className="text-center">
           {/* Badge */}
@@ -71,7 +71,6 @@ export function FAQSection() {
 
             return (
               <div
-                data-aos="zoom-in-down"
                 key={faq.question}
                 className={`group overflow-hidden rounded-2xl border bg-white shadow-sm transition-all duration-300 ${
                   isOpen

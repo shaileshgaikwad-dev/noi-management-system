@@ -54,5 +54,5 @@ export function useIncomeTrend(year: number) {
     Income: point.totalIntimationIncome,
   }));
 
-  return {  chartData, loading };
+  return { chartData, loading };
 }

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /dashboard
+Disallow: /api
+
+Sitemap: https://noi-management-system-729e.vercel.app/sitemap.xml

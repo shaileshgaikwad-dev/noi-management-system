@@ -24,9 +24,6 @@ import { NotFound } from "./components/common/NotFound";
 import { ContactNew } from "./components/home/ContactNew";
 import { MonthlyIncomeChart } from "./pages/admin/Charts/MonthlyIncomeChart";
 
-
-
-
 function App() {
   return (
     <>
